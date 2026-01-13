@@ -1,6 +1,6 @@
 /* Base/layout */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', Arial, sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -11,6 +11,9 @@ header, nav, footer {
   background: #004080;
   color: white;
   padding: 10px 20px;
+}
+h1, h2 {
+  font-family: 'Merriweather', Georgia, serif;
 }
 header h1 {
   margin: 0;
@@ -31,12 +34,123 @@ main {
   padding: 20px;
 }
 section {
-  margin: 30px 0;
+  margin: 50px 0;
 }
 h2 {
   border-bottom: 2px solid #ddd;
   padding-bottom: 5px;
   margin-bottom: 15px;
+}
+.btn-cv {
+  display: inline-block;
+  padding: 12px 18px;
+  background: #007acc;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.btn-cv:hover {
+  background: #005f99;
+}
+
+.home-intro {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.home-intro .profile-pic {
+  width: 190px;        /* ← increased from ~130px */
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid #004080;
+  flex-shrink: 0;        /* prevents flexbox from stretching it */
+}
+.profile-left {
+  text-align: center;
+}
+
+.social-icons {
+  margin-top: 12px;
+}
+
+.social-icons a {
+  margin: 0 8px;
+  font-size: 28px;
+  color: #004080;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007acc;
+}
+.pub-list {
+  padding-left: 20px;
+}
+
+.pub-list li {
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+
+.pub-list a {
+  color: #007acc;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.pub-list a:hover {
+  text-decoration: underline;
+}
+.pub-list li.selected {
+  background: #f0f6ff;
+  border-left: 4px solid #007acc;
+  padding: 10px 12px;
+}
+.citations {
+  color: #555;
+  font-size: 0.85rem;
+  margin-left: 8px;
+}
+.award-list {
+  list-style-type: disc;
+  padding-left: 25px;
+}
+
+.award-list li {
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+.selected-pubs {
+  list-style-type: disc;
+  padding-left: 22px;
+}
+
+.selected-pubs li {
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+.home-awards {
+  list-style-type: disc;
+  padding-left: 22px;
+}
+
+.home-awards li {
+  margin-bottom: 12px;
+}
+
+.highlight-award {
+  background: #f0f6ff;
+  border-left: 4px solid #007acc;
+  padding: 6px 10px;
+}
+@media (max-width: 768px) {
+  .home-intro {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 /* Footer */

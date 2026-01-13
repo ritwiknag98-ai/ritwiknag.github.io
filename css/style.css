@@ -152,6 +152,21 @@ h2 {
     text-align: center;
   }
 }
+.teaching-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.teaching-list > li {
+  margin-bottom: 28px;
+}
+
+.teaching-list ul {
+  list-style-type: disc;
+  padding-left: 22px;
+  margin-top: 8px;
+}
+
 
 /* Footer */
 footer {
